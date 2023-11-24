@@ -1,0 +1,13 @@
+import math 
+import random
+import numpy 
+"""x=3.14 
+y= math.sin(x) 
+print(y)"""
+
+#numero=random.randint(1,100)
+#print(numero)
+
+x=3.14 
+y= numpy.sin(x) 
+print(y)
