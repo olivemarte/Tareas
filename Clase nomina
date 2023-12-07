@@ -1,0 +1,22 @@
+class Nomina: 
+ def Afp( self, sb): 
+  return sb * 0.07
+  
+ def Ars(self, sb): 
+  return sb * 0.02
+ def SueldoNeto(self, sb,td): 
+  return sb - td
+ def TotalDesc (self,afp,ars):
+  return afp+ars 
+ 
+n=Nomina() 
+sueldo=float(input("Digite sueldo Base: ")) 
+afp=n.Afp(sueldo)
+ars=n.Ars(sueldo)
+descuento=n.TotalDesc(afp,ars) 
+sn=n.SueldoNeto(sueldo,descuento)
+
+print(" Afp           : {:0.2F}".format(afp))
+print(" Ars           : {:0.2F}".format(ars))
+print(" Descuebtos           : {:0.2F}".format(descuento))
+print("Sueldo Neto           : {:0.2F}".format(sn))
