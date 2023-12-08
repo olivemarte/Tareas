@@ -1,0 +1,24 @@
+class Estudiante: 
+     def __init__ (self):
+        self.nombre=input("Escribe el nombre del estudiante: ")
+        self.apellidos=input("Ecribe el apellido del estudiante: ")
+        self.edad=int(input("Escribe la edad del estudiante: "))
+        self.sexo=input("Escribe la sexo del estudiante: ")
+        self.direccion= input("Escribe la direccion del estudiante: ")
+        self.carrera= input("Escribe la carrera del estudiante: ")
+        self.email= input("Escribe el Email del estudiante: ")
+        self.telefno= input("Escribe el telefono del estudiante: ")
+
+
+     def imprimir (self):
+        print("El nombre del estudiante es: ", self.nombre)
+        print("El apellido del estudiante es: ", self.apellidos)
+        print("La edad del estudiante: ", self.edad)
+        print("El sexo del estudiante es: ", self.sexo)
+        print("La direccion del estudiante es: ", self.direccion)
+        print("La carrera del estudiante es: ", self.carrera)
+        print("El Email del estudiante es: ", self.email)
+        print("El telefono del estudiante es: ", self.telefno)
+
+estudiante1=Estudiante()
+estudiante1.imprimir() 
