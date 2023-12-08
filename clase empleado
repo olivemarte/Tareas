@@ -1,0 +1,30 @@
+class empleado:
+    def __init__ (self):
+        self.nombre=input("Escribe el nombre de la persona: ")
+        self.apellidos=input("Ecribe el apellido de la persona: ")
+        self.edad=int(input("Escribe la edad de la persona: "))
+        self.sexo=input("Escribe la sexo de la persona: ")
+        self.direccion= input("Escribe la direccion de la persona: ")
+        self.email=input("Escribe el Email del empleado: ")
+        self.sueldo=int(input("Digite el sueldo del empleado: "))
+
+    def irs(self):
+        self.total= self.sueldo*12
+        if self.total <= 416220:
+            print("Esta Exento")
+        elif self.total > 416220   or self.total <=624329:
+            self.pagar= self.total*0.15
+            print("Total a pagar para la IRS es: {:,.2f} ".format(self.pagar))
+        elif self.total > 624329 or self.total <=867123:
+            self.pagar= self.total*0.20
+            print("Total a pagar para la IRS es: {:,.2f} ".format(self.pagar))
+        elif self.total > 867123:
+            self.pagar= self.total*0.25
+            print("Total a pagar para la IRS es: {:,.2f} ".format(self.pagar))
+    def AFP(self):
+        self.total1= self.sueldo*0.07
+    
+    
+
+em=empleado()
+em.irs()
